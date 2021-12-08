@@ -7,6 +7,7 @@
     .pricing-card {
         flex: 50%;
     }
+
 }
 
 @media(max-width: 1024px) {
@@ -14,6 +15,48 @@
         --num-cols: 2;
         --row-height: 200px;
     }
+
+     .logo {
+         font-size: 1.6rem;
+     }
+
+     .header .navbar ul {
+         margin-top: 1.2rem;
+     }
+
+     .header .navbar ul li a {
+         font-size: 1.5rem;
+     }
+
+     .header .navbar ul li {
+         margin-left: 1.5rem;
+     }
+
+     /* ----Home Section */
+     .home .content {
+         padding: 2.4rem;
+     }
+
+     .home .content h3 {
+         font-size: 3rem;
+     }
+
+     .home {
+        min-height: 60vh;
+    }
+
+     /* -----Meal Prep */
+     .meal-prep p {
+         font-size: 3rem;
+         padding: 3rem 3rem;
+     }
+
+       /* -----Private Dinner */
+       .dining p {
+        font-size: 3rem;
+        padding: 3rem 3rem;
+    }
+
 
 }
 
@@ -37,8 +80,16 @@
         font-size: 55%
     }
 
+    .logo {
+        color: #e0b113;
+        font-size: 2rem;
+        justify-content: center; 
+
+    }
+
      .header #menu-bar {
          display: block;
+        
      }
 
      .header .navbar {
@@ -51,6 +102,9 @@
          transform: scaleY(0);
          transform-origin: top;
          opacity: 0;
+         display: flex;
+        justify-content: right;
+         align-items: center;
      }
 
      .header .navbar ul {
@@ -66,8 +120,6 @@
      .header .navbar ul li a {
          display: block;
          color: #e0b113;
-         /* padding-left: 2rem; */
-         /* border-left: .2rem solid #fff; */
          font-size: 2rem;
      }
 
@@ -93,57 +145,18 @@
          width: 15rem;
      }
 
-
-
-     /* #menu-bar {
-         display: block;
-     }
-     
-     .fa-times {
-        transform: rotate(180deg);
-     }
-
-     .header .navbar.nav-toggle {
-         transform: scaleY(1);
-         opacity: 1;
-     }
-
-
-    .header .navbar {
-        position: fix;
-        top: 8rem;
-        left: 0;
-        width: 100%;
-        background: #000;
-        border-top: .2rem solid rgba(0, 0, 0, .1);
-        transform: scaleY(0);
-        transform-origin: top;
-        opacity: 0;
+     /* -----Home Section */
+     .image {
+        padding-top: 4rem;
+    }
+     .home .image img {
+        width: 75vw;
     }
 
-    .header .navbar ul {
-        flex-flow: column;
-        padding: 2rem;
+    .home .content h3 {
+        font-size: 4rem;
     }
 
-     .header .navbar ul li {
-         margin: 1.5rem;
-         width: 100%;
-     }
-
-      .header .navbar ul li a {
-          display: block;
-          padding-left: 2rem;
-          border-left: .2rem solid #fff;
-          font-size: 2rem;
-      }
-
-    .header .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 0;
-        padding: 1.5rem 2rem;
-    } */
 
     /* ---About Section */
     .heading {
@@ -153,6 +166,22 @@
     .heading span {
         font-size: 2.3rem;
     }
+
+    /* -------Meal Prep */
+    .meal-prep p {
+         padding: 2rem 2rem;
+     }
+
+     /* -------Private Dinning */
+     .dining p {
+         padding: 2rem 2rem;
+     }
+
+     /* --------Packages Section */
+     .package p {
+         padding: 1.5rem 2em;
+    }
+    
 }
 
 @media ( max-width: 700px) {
@@ -161,9 +190,51 @@
     }
 }
 
+
 @media(max-width:450px) {
    html {
        font-size: 50%
+   }
+
+   .about .content {
+    padding: 0 1rem;
+  }
+
+   /* ---Home Section */
+   .home .content {
+    padding: 8rem .5rem;
+    }
+
+    .home .content h3 {
+    font-size: 4rem;
+    }
+
+    .home .image img {
+        width: 85vw;
+    }
+
+    /* ---Meal Prep */
+    .meal-prep p {
+        padding: 2rem .5rem;
+    }
+
+    .image-grid {
+        --num-cols: 1;
+        --row-height: 300px;
+    }
+    
+    .image-grid-col-2 {
+        grid-column: span 1;
+        
+    }
+    
+    .image-grid-row-2 {
+        grid-row: span 1;
+    }
+
+     /* --------Packages Section */
+     .package p {
+        padding: 2rem .2rem ;
    }
 
    .footer .col {
@@ -175,4 +246,20 @@
        flex-basis: 100%;
    }
 
+}
+
+
+@media ( max-width: 320px) {
+    .home .content h3 {
+        font-size: 2.8rem;
+        }
+
+        /*-----About Section  */
+    .about .content {
+        padding: 0 1rem;
+      }
+
+      .dining p {
+        padding: 2rem .5rem;
+      }
 }
